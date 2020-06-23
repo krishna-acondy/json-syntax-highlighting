@@ -1,0 +1,21 @@
+html,
+body {
+    background-color: rgb(40, 44, 52);
+    color: rgb(255, 255, 255);
+}
+
+.string {
+    color: rgb(166, 216, 166);
+}
+.number {
+    color: rgb(254, 125, 232);
+}
+.boolean {
+    color: rgb(0, 166, 255);
+}
+.null {
+    color: rgb(252, 134, 91);
+}
+.key {
+    color: rgb(7, 255, 201);
+}

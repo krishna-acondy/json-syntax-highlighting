@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON Syntax Highlighting Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./syntax-highlight.js"></script>
+    <script>
+      function showJsonContent() {
+        const preElement = document.querySelector("#json-content");
+        const json = {
+          _id: "5ef1bc8ed42c9beff4d64fe7",
+          index: 0,
+          guid: "c3605b1c-7162-4241-8a65-f2595e4f2262",
+          isActive: false,
+          balance: "$3,575.51",
+          picture: "http://placehold.it/32x32",
+          age: 38,
+          eyeColor: "brown",
+          name: "Jeannine Solis",
+          gender: "female",
+          company: "FLEETMIX",
+          email: "jeanninesolis@fleetmix.com",
+          phone: "+1 (805) 482-3094",
+          address: "748 Borinquen Pl, Dalton, New Jersey, 8606",
+          about: "Excepteur labore nisi mollit ipsum consectetur dolore.",
+          registered: "2019-10-26T05:10:13 -01:00",
+          latitude: -18.111324,
+          longitude: -124.175694,
+          tags: [
+            "enim",
+            "veniam",
+            "consequat",
+            "veniam",
+            "amet",
+            "reprehenderit",
+            "quis",
+          ],
+          friends: [
+            {
+              id: 0,
+              name: "Danielle Day",
+            },
+            {
+              id: 1,
+              name: "Isabelle Cox",
+            },
+            {
+              id: 2,
+              name: "Brandi Richmond",
+            },
+          ],
+          greeting: "Hello, Jeannine Solis! You have 3 unread messages.",
+          favoriteFruit: "apple",
+        };
+        preElement.innerHTML = syntaxHighlight(json);
+      }
+    </script>
+  </head>
+  <body onload="showJsonContent()">
+    <pre id="json-content"></pre>
+  </body>
+</html>
